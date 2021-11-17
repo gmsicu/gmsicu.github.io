@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GMS.icu :: 展示国产手机GMS支持情况</title>
+  <meta name="keywords" content="GMS.icu">
+  <meta name="description" content="Has Google Mobile Service dead?">
+  <link rel="Shortcut Icon" type="image/x-icon" href="./logo.png">
+  <meta name="theme-color" content="#6699ff">
+  <link rel="apple-touch-icon-precomposed" href="./logo.png">
+  <meta name="apple-mobile-web-app-title" content="GMS.icu">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    body {
+      font-family: 'Sarasa Mono SC', FiraCode, 'JetBrains Mono', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      name: '<strong>GMS.icu</strong>',
+      repo: 'https://github.com/gmsicu/gmsicu.github.io',
+      loadSidebar: true,
+      subMaxLevel: 1,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      loadNavbar: true,
+      mergeNavbar: true,
+      search: {
+        path: 'auto',
+        placeholder: 'Search'
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      },
+      count: {
+        countable: true,
+        float: 'right',
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese',
+        isExpected: false
+      }
+    }
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <noscript>
+    <h1>网页需要JavaScript支持</h1>
+    <h1>JavaScript is required.</h1>
+  </noscript>
+  <!-- Docsify -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+</body>
+
+</html>
